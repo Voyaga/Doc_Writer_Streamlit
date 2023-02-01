@@ -8,6 +8,16 @@ from PIL import Image
 
 
 
+seattle_weather = pd.read_csv('wallets.csv', parse_dates=['Name'])
+
+#st.set_page_config(layout="wide")
+def print_this():
+    st.write('HOLY SHIT BALLS BATMAN2.0')
+    my_file = open("wallets.txt", "w")
+
+    item = 'HOLY SHIT BALLS BATMAN'
+
+    my_file.write(item)
 
 
 st.button('Say helloo', on_click=print_this)
