@@ -3,7 +3,10 @@ import numpy as np
 import pandas as pd
 from st_aggrid import AgGrid
 import plost
+from PIL import Image
 
+
+img = Image.open('bitcoin.png')
 # Data from Plost
 stocks = pd.DataFrame(dict(
         company=['goog', 'fb', 'ms', 'amazon'],
@@ -15,7 +18,7 @@ stocks = pd.DataFrame(dict(
 seattle_weather = pd.read_csv('https://raw.githubusercontent.com/tvst/plost/master/data/seattle-weather.csv', parse_dates=['date'])
 
 ######################################################
-st.markdown('*CTHub News*')
+st.markdown('*CTHub News Mate*')
 st.title('Writing an interactive research article using Streamlit')
 
 st.markdown('''
@@ -26,6 +29,7 @@ st.markdown('''
 ''')
 
 st.header('Abstract')
+st.image(img, caption='BITCOIN')
 st.info('''
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 ''')
