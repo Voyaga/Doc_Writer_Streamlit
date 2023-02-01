@@ -4,7 +4,7 @@ import pandas as pd
 from st_aggrid import AgGrid
 import plost
 from PIL import Image
-from winotify import Notification, audio
+
 
 
 
@@ -19,12 +19,6 @@ def print_this():
 
     my_file.write(item)
 
-    msg = (f'ITEM: {item}')
-    toast = Notification(app_id="FUNDS RECEIVED!",
-                         title=msg,
-                         duration="long")
-    toast.set_audio(audio.LoopingAlarm, loop=False)
-    toast.show()
 
 st.button('Say helloo', on_click=print_this)
 
