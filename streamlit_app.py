@@ -15,7 +15,7 @@ stocks = pd.DataFrame(dict(
 seattle_weather = pd.read_csv('https://raw.githubusercontent.com/tvst/plost/master/data/seattle-weather.csv', parse_dates=['date'])
 
 ######################################################
-st.markdown('*CTHub News Mate*')
+st.markdown('*CTHub News Mate Yeah Good On Ya*')
 st.title('Writing an interactive research article using Streamlit')
 
 st.markdown('''
