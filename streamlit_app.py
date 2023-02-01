@@ -12,7 +12,7 @@ seattle_weather = pd.read_csv('wallets.csv', parse_dates=['Name'])
 
 #st.set_page_config(layout="wide")
 def print_this():
-    st.write('HOLY SHIT BALLS BATMAN2.0')
+    st.write('HOLY SHIT BALLS BATMAN2.001')
     my_file = open("wallets.txt", "w")
 
     item = 'HOLY SHIT BALLS BATMAN'
@@ -58,7 +58,7 @@ Crown Therapy reserves all rights and are not responsible for individual use by 
   
 Notice to agent is notice to principle. Notice to principle is notice to agent.
 ''')
-video_file = open('C:\\Users\\voyag\\Dropbox\\ABS Stats Video 7 Natural Imm Prof Cos (1).mp4', 'rb')
+video_file = open('“Until Proven Otherwise” —Two of the Top Cardiologists in the World.mp4', 'rb')
 video_bytes = video_file.read()
 
 st.video(video_bytes)
